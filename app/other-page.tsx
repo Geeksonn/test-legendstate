@@ -8,7 +8,7 @@ export default function OtherPage() {
             <SafeAreaView>
                 <Text>Other Page</Text>
 
-                <Link href='/synced-crud'>Go To Synced Crud</Link>
+                <Link href='/'>Index</Link>
             </SafeAreaView>
         </SafeAreaProvider>
     );
