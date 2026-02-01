@@ -1,7 +1,9 @@
 import { expenses$ } from '@/lib/supabase-legend';
 import { when } from '@legendapp/state';
-import { Stack } from 'expo-router';
+import { SplashScreen, Stack } from 'expo-router';
 import React from 'react';
+
+SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
     React.useEffect(() => {
@@ -10,6 +12,7 @@ export default function RootLayout() {
         };
 
         loadData();
+        SplashScreen.hideAsync();
     }, []);
 
     return (
